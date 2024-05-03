@@ -51,3 +51,6 @@ def delete_view(request, id):
         return HttpResponseRedirect("/")
  
     return render(request, "delete_view.html", context)
+
+def hello_world(request):
+    return render(request, 'hello_world.html')
